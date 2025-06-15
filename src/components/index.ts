@@ -1,0 +1,13 @@
+export { default as Navbar } from './Navbar';
+export { default as HeaderSection } from './HeaderSection';
+export { default as AboutUs } from './AboutUs';
+export { default as Services } from './Services';
+export { default as Features } from './Features';
+export { default as Technologies } from './Technologies';
+export { default as Portfolio } from './Portfolio';
+export { default as WhyChooseJsys } from './WhyChooseJsys';
+export { default as TrustedPartners } from './TrustedPartners';
+export { default as Testimonial } from './Testimonial';
+export { default as CTA } from './CTA';
+export { default as Footer } from './Footer';
+export { default as LanguageSwitch } from './LanguageSwitch';

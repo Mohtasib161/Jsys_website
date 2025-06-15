@@ -1,0 +1,171 @@
+{
+  "hero": {
+    "title": "You Dream It",
+    
+    "subtitle": "We Build It",
+    "description": "Transforming imagination into powerful digital experiences. With the perfect blend of creativity and technology, we bring your ideas to life — from initial concept to final execution."
+  },
+  "services": {
+    "title": "Our Services",
+    "service1": {
+      "title": "Comprehensive Application Development",
+      "description": "Bring your vision to life with our full-cycle application development services. We design and build bespoke web, mobile, and cloud applications that are scalable, secure, and tailored to meet your unique business objectives."
+    },
+    "service2": {
+      "title": "Expert Consulting & Market Intelligence",
+      "description": "Make informed decisions with confidence. Our seasoned consultants provide strategic guidance, in-depth market research, and requirements analysis to uncover opportunities and sharpen your competitive edge."
+    },
+    "service3": {
+      "title": "Agile Team Extension Services",
+      "description": "Expand your capabilities without the overhead. Our flexible team augmentation model gives you on-demand access to elite developers, designers, and project managers — all aligned with your workflow and goals."
+    }
+  },
+  "mission": {
+    "title": "Fueling Your Success Through Real-Time Innovation",
+    "description": "At JSYS Technology, we're more than just a tech company — we're a driven collective of developers, designers, and digital visionaries. Our mission is to turn your boldest ideas into high-impact software solutions that accelerate growth, streamline operations, and unlock new opportunities."
+  },
+  "whatWeDo": {
+    "title": "What We Do",
+    "item1": {
+      "title": "End-to-End Application Development",
+      "description": "From concept to deployment, we deliver tailor-made web, mobile, and cloud applications built for performance, scalability, and user experience."
+    },
+    "item2": {
+      "title": "Strategic Consulting & Market Intelligence",
+      "description": "Navigate complex markets with confidence. Our experts provide data-driven insights and strategic guidance to align your tech initiatives with real-world business goals."
+    },
+    "item3": {
+      "title": "Innovative Business Solutions",
+      "description": "We create forward-thinking, agile solutions designed to solve real problems — helping your business stay ahead of the curve in a fast-moving digital landscape."
+    }
+  },
+
+  
+
+  "trustedSection": {
+    "title": "Trusted by Industry Leaders",
+    "subtitle":"See how we've transformed ideas into impactful solutions across various industries.",
+    "testimonials": [
+      {
+        "quote": "Our partnership with JSYS Technology has been a game-changer for us. Their technical expertise, agility, and deep understanding of our goals make them an invaluable long-term partner.",
+        "name": "Chikara Tanigaki",
+        "title": "CEO",
+        "company": "Rehsaku",
+        "location": "Japan"
+      },
+      {
+        "quote": "Collaborating with JSYS Technology has consistently exceeded our expectations. Their team is not only highly skilled but also deeply committed to our success. We're proud to have them as our technology partner.",
+        "name": "Ahmad Masood",
+        "title": "CEO",
+        "company": "Zenex Inc.",
+        "location": "Japan"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Choose ",
+    "title2": "JSYS Technology?",
+    "item1": {
+      "title": "Innovation-Driven",
+      "description": "We don't just follow trends — we create them. Our solutions are built with cutting-edge technologies and forward-thinking strategies."
+    },
+    "item2": {
+      "title": "Business-Focused",
+      "description": "Every product we build is aligned with your goals, helping you optimize operations, boost ROI, and lead in your market."
+    },
+    "item3": {
+      "title": "Agile & Scalable",
+      "description": "Whether you're a startup or enterprise, our flexible engagement models grow with you — from MVP to full-scale deployment."
+    }
+  },
+
+  "project" : {
+    "title" : "Explore Our Innovations",
+    "subtitle" : "See how we've transformed ideas into impactful solutions across various industries.",
+    "ProjectFilter": "Projects Filter",
+    "projectall": "All Projects",
+    "project1": "Healthcare",
+
+    "project2": "Eduction",
+    "project3": "Real Estate",
+    "project4": "Consulting",
+    "project5": "Agriculture"
+  },
+
+
+  "coreServices": {
+    "title": "Our Core Services",
+    "item1": {
+      "title": "End-to-End Application Development",
+      "description": "We design and develop custom web, mobile, and cloud applications — fully tailored, secure, and built to perform."
+    },
+    "item2": {
+      "title": "Strategic Consulting & Market Intelligence",
+      "description": "Gain clarity and direction with actionable insights, detailed market analysis, and expert technology consulting."
+    },
+    "item3": {
+      "title": "Innovative Business Solutions",
+      "description": "We engineer creative, practical solutions to real-world challenges — helping your business adapt, evolve, and thrive."
+    }
+  },
+  
+  
+  "technologiesSection": {
+    "title": "Technologies Powering ",
+    "title2": "Our Innovations",
+    "description": "At JSYS Technology, we harness the power of modern, battle-tested technologies to build high-performance, scalable, and future-ready solutions.",
+    "technologies": [
+      {
+        "name": "Microsoft Stack",
+        "description": "Robust enterprise-grade tools for scalable, secure, and efficient development."
+      },
+      {
+        "name": "Laravel",
+        "description": "Elegant PHP framework for clean, fast, and maintainable backend development."
+      },
+      {
+        "name": "React & Next.js",
+        "description": "Cutting-edge tools for building interactive, high-performance frontends and full-stack applications."
+      },
+      {
+        "name": "JavaScript & TypeScript",
+        "description": "The core of modern web development — dynamic, versatile, and everywhere."
+      },
+      {
+        "name": "Angular",
+        "description": "Structured, scalable front-end architecture for large-scale enterprise apps."
+      },
+      {
+        "name": "Node.js & NestJS",
+        "description": "Fast, scalable server-side frameworks for building real-time and event-driven systems."
+      },
+      {
+        "name": "Flutter & Swift",
+        "description": "High-performance mobile app development — cross-platform with Flutter, native iOS with Swift."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Let's Build What's Next",
+    "description": "Ready to innovate? Let's turn your ideas into intelligent software that drives success.",
+    "buttons": ["Contact Us", "Book a Free Consultation", "Explore Our Work"]
+  },
+  "testimonials": {
+    "title": "Why",
+    "title2": "We're Chosen",
+    "quotes": [
+      {
+        "text": "JSYS delivered exactly what we envisioned — on time, on budget, and with exceptional quality.",
+        "author": "Muhammad Kamran Ismlaily, Marketing Executive AgriPak Gen Trading LLC (UAE)"
+      },
+      {
+        "text": "Their team felt like an extension of ours. Communication was seamless, and the results were outstanding.",
+        "author": "Tahir Mangatt, CEO & Founder Toronto Condomania – Toronto, Canada"
+      },
+      {
+        "text": "The speed at which JSYS transformed our concept into a fully functional app was remarkable.",
+        "author": "Zahid khan, CEO mena one consultant"
+      }
+    ]
+  }
+}
