@@ -4,6 +4,29 @@
   "subtitle": "私たちがつくります",
   "description": "想像力（そうぞうりょく）を力強（ちからづよ）いデジタル体験（たいけん）へと変（か）えます。創造性（そうぞうせい）と技術（ぎじゅつ）の完璧（かんぺき）な融合（ゆうごう）で、アイデアを現実（げんじつ）に — 初期（しょき）のコンセプトから最終（さいしゅう）の完成（かんせい）まで。"
 },
+"navmenu": {
+  "home": "概要",
+  "server": "私たちの仕事",
+  "about": "私たちについて",
+  "project": "革新",
+  "contact": "お問い合わせ"
+},
+"buttons": {
+  "button1": "始める",
+  "button2": "お問い合わせ",
+  "button3": "メッセージを送信",
+  "button4": "送信中..."
+},
+"projectsTitle": {
+  "project": "すべてのプロジェクト",
+  "project1": "ヘルスケア",
+  "project2": "教育",
+  "project3": "不動産",
+  "project4": "コンサルティング",
+  "project5": "農業",
+  "subtitle": "プロジェクトフィルター"
+
+},
   "services": {
     "title": "サービスのご紹介（さーびす の ごしょうかい）",
     "service1": {
@@ -121,7 +144,99 @@
     "project2": "教育",
     "project3": "不動産",
     "project4": "コンサルティング",
-    "project5": "農業"
+    "project5": "農業",
+  "companyname": {
+    "name1": "リハサク (日本)",
+    "name2": "メリディアン・ハイスクール",
+    "name3": "アボン・カレッジ",
+    "name4": "メナ・ワン・コンサルティング",
+    "name5": "アグリパック",
+    "name6": "トロント",
+    "name7": "タヒール・マンガット",
+    "name8": "アルツハイマー・パキスタン"
+  },
+"projecttitle": {
+  "title1": "医療",
+  "title2": "教育",
+  "title3": "コンサルティング",
+  "title4": "農業",
+  "title5": "不動産"
+},
+
+  "keyfeature": {
+    "title": "主な特徴",
+    "Projectfeatures1": {
+      "name1": "CRM統合",
+      "name2": "EMRシステム",
+      "name3": "AI駆動の分析"
+    },
+    "Projectfeatures2": {
+      "name1": "オンライン学習",
+      "name2": "学生ポータル",
+      "name3": "コース管理"
+    },
+    "Projectfeatures3": {
+      "name1": "教育プラットフォーム",
+      "name2": "学生管理",
+      "name3": "学術リソース"
+    },
+    "Projectfeatures4": {
+      "name1": "コンサルティングサービス",
+      "name2": "ISO認証",
+      "name3": "カリキュラム開発"
+    },
+    "Projectfeatures5": {
+      "name1": "農業機械カタログ",
+      "name2": "トラクター展示",
+      "name3": "製品仕様"
+    },
+    "Projectfeatures6": {
+      "name1": "物件リスト",
+      "name2": "高度な検索フィルター",
+      "name3": "インタラクティブ地図表示"
+    },
+    "Projectfeatures7": {
+      "name1": "エージェントプロフィール & 実績",
+      "name2": "顧客の推薦",
+      "name3": "物件ポートフォリオ"
+    },
+    "Projectfeatures8": {
+      "name1": "認知症啓発リソース",
+      "name2": "介護者支援ガイド",
+      "name3": "イベント & ワークショップカレンダー"
+    }
+  },
+
+  
+  "deliverstatus": {
+    "status": "近日公開",
+    "status1": "プロジェクトを見る"
+  },
+  "status": {
+    "status1": "5年以上の開発の旅",
+    "status2": "正常に納品完了"
+  },
+  "count" : "もっと",
+  "projectheading": {
+    "heading1": "Rehabsuite – 究極のクリニック予約 & 管理プラットフォーム",
+    "heading2": "Meridian High School ウェブアプリケーション",
+    "heading3": "Avon College ウェブアプリケーション",
+    "heading4": "MENA ONE Consulting ウェブアプリケーション",
+    "heading5": "AgriPak ウェブアプリケーション",
+    "heading6": "TORONTO ウェブアプリケーション",
+    "heading7": "TAHIR MANGATT ウェブアプリケーション",
+    "heading8": "Alzheimer's Pakistan"
+  },
+    "projectdec": {
+    "description1": "長期的な成長と革新を目的とした完全統合型360度クリニック管理システム。5年以上にわたる開発の旅を経て、このプラットフォームはCRM、財務、会計、給与、電子医療記録（EMR）、マーケティング、最先端のAI駆動機能などの重要な機能を統合し、運営を最適化し、患者ケアを改善し、クリニック管理者にリアルタイムでの洞察を提供します。",
+    "description2": "Avon Collegeは、今日の速いペースの生活に対応する学習ソリューションです。Avon Collegeは、個人、教育者、学生、専門家向けに高品質のオンライン独立学習プログラムを提供しています。",
+    "description3": "Meridian High Schoolは、平等な教育機会と強力な教育システムが自律的な社会の基盤であるという信念に基づいています。Ipsa Scientia Potestas Est（知識は力）を私たちのモットーとしています。",
+    "description4": "私たちのコンサルティング会社は、教育、ISO認証、カリキュラム開発、教育法などの複雑な問題を解決するお手伝いをしています。詳細に案内し、教育目標の達成に集中できるようサポートします。",
+    "description5": "農業機械に関するすべての要求に対応するワンステップソリューション。AgriPakは20年の歴史を持ち、世界最高級のAGRI機械やMassey Fergusonトラクターを供給するリーディングカンパニーです。",
+    "description6": "GTAのトップ不動産物件を一か所で発見できます。",
+    "description7": "Tahir Mangattはカナダのトップ不動産エージェントの1人です。オンタリオ州で数々の賞を受賞した経験豊富な不動産エージェントとして、Tahirはカナダのトップ不動産エージェントとして名声を得ています。",
+    "description8": "Alzheimer's Pakistanはアルツハイマー病および関連する認知症の国の組織です。Punjab Social Welfare Departmentに登録されており、この非政府コミュニティ組織の主な目的は、認知症患者とその介護者の福祉に向けた活動です。1999年の設立以来、Alzheimer's Pakistanは認知症に関する大衆啓発活動の先頭に立っています。"
+  }
 },
   
   "trustedSection": {
@@ -142,24 +257,46 @@
         "company": "Zenex Inc.",
         "location": "日本"
       }
-    ]
+    ],
+    "ratingTitle": {
+  "title1": "グローバルクライアント",
+  "title2": "納品したプロジェクト",
+  "title3": "顧客満足度",
+  "title4": "経験年数"
+}
+
   },
   "testimonials": {
-    "title": "選（えら）",
-    "title2": "ばれる理由（りゆう）",
-    "quotes": [
-      {
-        "text": "JSYS（ジェイシス）は、私たちが思（おも）い描（えが）いた通（とお）りのものを、期日（きじつ）通（どお）り・予算内（よさんない）・そして高品質（こうひんしつ）で納品（のうひん）してくれました。",
-        "author": "Muhammad Kamran Ismlaily, Marketing Executive AgriPak Gen Trading LLC (UAE)"
-      },
-      {
-        "text": "彼（かれ）らのチームは、まるで自分（じぶん）たちのチームの一部（いちぶ）のようでした。コミュニケーションもスムーズで、成果（せいか）も素晴（すば）らしかったです。",
-        "author": "Tahir Mangatt, CEO & Founder Toronto Condomania – Toronto, Canada"
-      },
-      {
-        "text": "JSYSが私たちのアイデアを、あっという間（ま）に実用（じつよう）アプリに変（か）えてくれたスピード感（かん）は感動的（かんどうてき）でした。",
-        "author": "Zahid khan, CEO mena one consultant"
-      }
-    ]
+    "title": "なぜ",
+    "title2": "私たちが選ばれた理由",
+    "quotes": {
+      "text1": "JSYSは、私たちが思い描いた通りのものを、時間通り、予算内で、卓越した品質で提供しました。",
+      "author1": "Muhammad Kamran Ismlaily、マーケティング担当、AgriPak Gen Trading LLC（UAE）",
+      "text2": "彼らのチームはまるで私たちの延長線上にいるかのようでした。コミュニケーションは途切れることなく、結果は素晴らしかったです。",
+      "author2": "Tahir Mangatt、CEO兼創設者、Toronto Condomania – トロント、カナダ",
+      "text3": "JSYSが私たちのコンセプトを完全に機能するアプリに変換した速度は驚異的でした。",
+      "author3": "Zahid khan、CEO、mena one consultant"
+    }
+  },
+  "footcontent": {
+    "subtitle": "お問い合わせ",
+    "discription": "私たちの高度なスキルを持つ開発チームは、データ分析を専門としています。",
+    "contactDec": "ご意見をお聞かせください。メッセージを送信してください！",
+    "address": "神奈川県横浜市南区中島町ノーブル横浜マイタ504",
+    "address2": " 日本郵便番号232-005",
+    "formcontent": {
+  "title": {
+    "name": "名前",
+    "email": "メールアドレス",
+    "message": "メッセージ"
+  },
+  "placeholder": {
+    "name": "あなたの名前",
+    "email": "あなたのメールアドレス",
+    "message": "あなたのメッセージ"
   }
+}
+  }
+
+
 }

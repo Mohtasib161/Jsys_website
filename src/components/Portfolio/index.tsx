@@ -1,150 +1,164 @@
+"use client"
+
 import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Clock, ExternalLink, CheckCircle, ChevronLeft, ChevronRight, Filter } from "lucide-react"
-import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
-// Project data remains the same as in your original component
+// Mock translation function - replace with your actual useTranslation hook
+
+
 const projects = [
   {
     id: 1,
-    company: "Rehsaku (Japan)",
-    title: "Rehabsuite – The Ultimate Clinic Reservation & Management Platform",
-    description:
-      "A fully integrated, 360-degree clinic management system designed for long-term growth and innovation. Over a 5+ year development journey, this platform will unify critical functions including CRM, Finance, Accounts, Payroll, Electronic Medical Records (EMR), Marketing, and cutting-edge AI-driven features to optimize operations, improve patient care, and empower clinic administrators with real-time insights.",
+    company: "project.companyname.name1",
+    title: "project.projectheading.heading1",
+    description: "project.projectdec.description1",
     image: "/assets/images/REHASAKU.PNG",
     link: "#",
     status: "development",
-    developmentPhase: "5+ Year Development Journey",
-    features: ["CRM Integration", "EMR System", "AI-Driven Analytics", "Financial Management", "Marketing Automation"],
-    category: "healthcare",
+    developmentPhase: "project.status.status1",
+    features: [
+      "project.keyfeature.Projectfeatures1.name1",
+      "project.keyfeature.Projectfeatures1.name2",
+      "project.keyfeature.Projectfeatures1.name3",
+      "Financial Management",
+      "Marketing Automation",
+    ],
+    category: "project.projecttitle.title1",
   },
   {
     id: 2,
-    company: "Meridian High School",
-    title: "Web Application",
-    description:
-      "Avon College is the learning solution for today's fast-paced life. Avon College offers high quality online programs of independent study for individuals, educators, students, and professionals.",
+    company: "project.companyname.name2",
+    title: "project.projectheading.heading2",
+    description: "project.projectdec.description1",
     image: "/assets/images/project.PNG",
     link: "https://avoncollege.com/index.html",
     status: "live",
-    developmentPhase: "Successfully Delivered",
-    features: ["Online Learning", "Student Portal", "Course Management", "Educational Resources", "Assessment Tools"],
-    category: "education",
+    developmentPhase: "project.status.status2",
+    features: [
+      "project.keyfeature.Projectfeatures2.name2",
+      "project.keyfeature.Projectfeatures2.name1",
+      "project.keyfeature.Projectfeatures1.name3",
+      "Educational Resources",
+      "Assessment Tools",
+    ],
+    category: "project.projecttitle.title1",
   },
   {
     id: 3,
-    company: "Avon College",
-    title: "Web Application",
-    description:
-      "Meridian High School is dedicated to the belief that equal educational opportunity and a strong education system are crucial cornerstones of an autonomous society. Ipsa Scientia Potestas Est (Knowledge is Power) is our motto.",
+    company: "project.companyname.name3",
+    title: "project.projectheading.heading3",
+    description: "project.projectdec.description1",
     image: "/assets/images/project2.PNG",
     link: "https://www.meridianhigh.school/index.html",
     status: "live",
-    developmentPhase: "Successfully Delivered",
-    features: ["Educational Platform", "Student Management", "Academic Resources", "Digital Learning", "School Portal"],
-    category: "education",
+    developmentPhase: "project.status.status2",
+    features: [
+      "project.keyfeature.Projectfeatures3.name1",
+      "project.keyfeature.Projectfeatures3.name2",
+      "project.keyfeature.Projectfeatures3.name3",
+      "Digital Learning",
+      "School Portal",
+    ],
+    category: "project.projecttitle.title2",
   },
   {
     id: 4,
-    company: "MENA ONE Consulting",
-    title: "Web Application",
-    description:
-      "Our consulting firm is dedicated to helping you navigate the complexities of education, ISO certification, curriculum development, and education laws. Let us guide you through the details, so you can focus on what really matters - achieving your educational goals.",
+    company: "project.companyname.name4",
+    title: "project.projectheading.heading4",
+    description: "project.projectdec.description1",
     image: "/assets/images/project3.PNG",
     link: "https://mena1.consulting/",
     status: "live",
-    developmentPhase: "Successfully Delivered",
+    developmentPhase: "project.status.status2",
     features: [
-      "Consulting Services",
-      "ISO Certification",
-      "Curriculum Development",
+      "project.keyfeature.Projectfeatures4.name1",
+      "project.keyfeature.Projectfeatures4.name2",
+      "project.keyfeature.Projectfeatures4.name3",
       "Education Laws",
       "Business Solutions",
     ],
-    category: "consulting",
+    category: "project.projecttitle.title3",
   },
   {
     id: 5,
-    company: "AgriPak",
-    title: "Web Application",
-    description:
-      "The one step solution to all your agricultural machinery requirements. AgriPak is a twenty year old establishment, a leading manufacturer of AGRI machinery with a specialty in the supply of world's finest AGRI & Massey Ferguson Tractors.",
+    company: "project.companyname.name5",
+    title: "project.projectheading.heading5",
+    description: "project.projectdec.description1",
     image: "/assets/images/project.PNG",
     link: "https://agripakgroup.com/",
     status: "live",
-    developmentPhase: "Successfully Delivered",
+    developmentPhase: "project.status.status2",
     features: [
-      "Agricultural Machinery Catalog",
-      "Tractor Showcase",
-      "Product Specifications",
+      "project.keyfeature.Projectfeatures5.name1",
+      "project.keyfeature.Projectfeatures5.name2",
+      "project.keyfeature.Projectfeatures5.name3",
       "Dealer Locator",
       "Contact/Inquiry System",
     ],
-    category: "agriculture",
+    category: "project.projecttitle.title4",
   },
   {
     id: 6,
-    company: "TORONTO",
-    title: "Web Application",
-    description: "Discover GTA's Top Real Estate Properties All in One Place",
+    company: "project.companyname.name6",
+    title: "project.projectheading.heading6",
+    description: "project.projectdec.description1",
     image: "/assets/images/Project5.PNG",
     link: "https://torontocondomania.ca/",
     status: "live",
-    developmentPhase: "Successfully Delivered",
+    developmentPhase: "project.status.status2",
     features: [
-      "Property Listings",
-      "Advanced Search Filters",
-      "Interactive Map View",
+      "project.keyfeature.Projectfeatures6.name1",
+      "project.keyfeature.Projectfeatures6.name2",
+      "project.keyfeature.Projectfeatures6.name3",
       "Virtual Tours",
       "Agent Contact System",
     ],
-    category: "real-estate",
+    category: "project.projecttitle.title5",
   },
   {
     id: 7,
-    company: "TAHIR MANGATT",
-    title: "Web Application",
-    description:
-      "Tahir Mangatt is One of the Top Real Estate Agents in Canada. As a multi-award-winning realtor with years of experience in Ontario, Tahir has earned a reputation as one of the top Canadian realtors.",
+    company: "project.companyname.name7",
+    title: "project.projectheading.heading7",
+    description: "project.projectdec.description1",
     image: "/assets/images/project7.PNG",
     link: "https://tahirmangatt.com/",
     status: "live",
-    developmentPhase: "Successfully Delivered",
+    developmentPhase: "project.status.status2",
     features: [
-      "Agent Profile & Achievements",
-      "Client Testimonials",
-      "Property Portfolio",
+      "project.keyfeature.Projectfeatures7.name1",
+      "project.keyfeature.Projectfeatures7.name2",
+      "project.keyfeature.Projectfeatures7.name3",
       "Buyer/Seller Guides",
       "Lead Capture & Contact Form",
     ],
-    category: "real-estate",
+    category: "project.projecttitle.title5",
   },
   {
     id: 8,
-    company: "Alzheimer's Pakistan",
-    title: "Web Application",
-    description:
-      "Alzheimer's Pakistan is the National Organization of Alzheimer's and related dementias. It is registered with Punjab Social Welfare Department and the main objective of this Non Government Community Organization is to work towards the welfare of people with dementia and their care givers. Since its inception in 1999, Alzheimer's Pakistan has been in the forefront to create mass awareness about Dementias.",
+    company: "project.companyname.name8",
+    title: "project.projectheading.heading8",
+    description: "project.projectdec.description1",
     image: "/assets/images/project8.PNG",
     link: "https://alz.org.pk/",
     status: "live",
-    developmentPhase: "Successfully Delivered",
+    developmentPhase: "project.status.status2",
     features: [
-      "Dementia Awareness Resources",
-      "Caregiver Support Guides",
-      "Events & Workshops Calendar",
+      "project.keyfeature.Projectfeatures8.name1",
+      "project.keyfeature.Projectfeatures8.name2",
+      "project.keyfeature.Projectfeatures8.name3",
       "Donation & Volunteer Portal",
       "Contact & Helpline Information",
     ],
-    category: "healthcare",
+    category: "project.projecttitle.title1",
   },
 ]
 
 export default function RecentWork() {
-  const { t } = useTranslation() // Assuming you have translations for this section
+  const { t } = useTranslation()
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const scrollRef = useRef<HTMLDivElement>(null)
   const [isDragging, setIsDragging] = useState(false)
@@ -153,17 +167,17 @@ export default function RecentWork() {
   const [activeFilter, setActiveFilter] = useState("all")
   const [visibleProjects, setVisibleProjects] = useState(projects)
 
-  // Filter categories
+  // Filter categories mapped to translation keys
   const categories = [
-    { id: "all", label: "All Projects" },
-    { id: "healthcare", label: "Healthcare" },
-    { id: "education", label: "Education" },
-    { id: "real-estate", label: "Real Estate" },
-    { id: "consulting", label: "Consulting" },
-    { id: "agriculture", label: "Agriculture" },
+    { id: "all", label: "projectsTitle.project", categoryKey: "all" },
+    { id: "project.projecttitle.title1", label: "projectsTitle.project1", categoryKey: "project.projecttitle.title1" },
+    { id: "project.projecttitle.title2", label: "projectsTitle.project2", categoryKey: "project.projecttitle.title2" },
+    { id: "project.projecttitle.title3", label: "projectsTitle.project4", categoryKey: "project.projecttitle.title3" },
+    { id: "project.projecttitle.title4", label: "projectsTitle.project5", categoryKey: "project.projecttitle.title4" },
+    { id: "project.projecttitle.title5", label: "projectsTitle.project3", categoryKey: "project.projecttitle.title5" },
   ]
 
-  // Filter projects when activeFilter changes
+  // Fixed filter logic to work with translation keys
   useEffect(() => {
     if (activeFilter === "all") {
       setVisibleProjects(projects)
@@ -212,7 +226,7 @@ export default function RecentWork() {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-grey-50" id="projects">
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50" id="projects">
       <div className="max-w-7xl mx-auto">
         {/* Header with animated underline */}
         <div className="text-center mb-12">
@@ -224,7 +238,7 @@ export default function RecentWork() {
             className="inline-block"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1f3059] uppercase tracking-tight">
-              {t("project.title") || "Explore Our Innovation"}
+              {t("project.title")}
             </h2>
             <motion.div
               className="h-1 bg-gradient-to-r from-[#1f3059] to-[#ff7858] mt-4 mx-auto"
@@ -234,17 +248,14 @@ export default function RecentWork() {
               transition={{ duration: 0.8, delay: 0.3 }}
             />
           </motion.div>
-          <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg">
-            {t("project.subtitle") ||
-              "Discover our portfolio of successful projects across various industries, showcasing our expertise and commitment to excellence."}
-          </p>
+          <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg">{t("project.subtitle")}</p>
         </div>
 
         {/* Category filters */}
         <div className="mb-10">
           <div className="flex items-center justify-center mb-4">
             <Filter className="w-5 h-5 mr-2 text-[#1f3059]" />
-            <h3 className="text-lg font-semibold text-[#1f3059]">{t("ProjectFilter") || "Filter Projects"}</h3>
+            <h3 className="text-lg font-semibold text-[#1f3059]">{t("projectsTitle.subtitle")}</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-2 md:gap-4">
             {categories.map((category) => (
@@ -257,7 +268,7 @@ export default function RecentWork() {
                     : "bg-white text-gray-600 hover:bg-gray-100"
                 }`}
               >
-                {category.label}
+                {t(category.label)}
               </button>
             ))}
           </div>
@@ -282,14 +293,24 @@ export default function RecentWork() {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          {/* Projects container */}
+          {/* Projects container - Fixed scrollbar issue */}
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto pb-8 -mx-4 px-4 space-x-6 scroll-smooth hide-scrollbar"
+            className="flex pb-4 -mx-4 px-4 space-x-6 overflow-x-auto"
+            style={{
+              scrollbarWidth: "none" /* Firefox */,
+              msOverflowStyle: "none" /* Internet Explorer 10+ */,
+            }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseLeave={() => setIsDragging(false)}
           >
+            <style>{`
+              div::-webkit-scrollbar {
+                display: none;
+              }
+            `}</style>
+
             <AnimatePresence>
               {visibleProjects.map((project, index) => (
                 <motion.div
@@ -308,26 +329,26 @@ export default function RecentWork() {
                     {project.status === "development" ? (
                       <>
                         <Clock className="h-3.5 w-3.5" />
-                        In Development
+                        {t("project.deliverstatus.status")}
                       </>
                     ) : (
                       <>
                         <CheckCircle className="h-3.5 w-3.5" />
-                        Live Project
+                        {t("project.deliverstatus.status1")}
                       </>
                     )}
                   </div>
 
                   {/* Category tag */}
                   <div className="absolute top-4 left-4 z-10 bg-[#ff7858]/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium shadow-md">
-                    {project.category.charAt(0).toUpperCase() + project.category.slice(1)}
+                    {t(project.category)}
                   </div>
 
                   {/* Project image with overlay */}
                   <div className="relative h-64 overflow-hidden">
                     <motion.img
                       src={project.image}
-                      alt={project.title}
+                      alt={t(project.title)}
                       className="w-full h-full object-cover object-top"
                       initial={{ scale: 1 }}
                       animate={{ scale: hoveredIndex === index ? 1.05 : 1 }}
@@ -339,14 +360,14 @@ export default function RecentWork() {
                   {/* Project content */}
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-3">
-                      <div className="text-sm font-semibold text-[#1f3059]">{project.company}</div>
+                      <div className="text-sm font-semibold text-[#1f3059]">{t(project.company)}</div>
                       <div className="text-xs text-[#ff7858] font-medium bg-orange-50 px-2.5 py-1 rounded-md border border-orange-100">
-                        {project.developmentPhase}
+                        {t(project.developmentPhase)}
                       </div>
                     </div>
 
-                    <h3 className="text-xl font-bold mb-3 leading-tight text-gray-900">{project.title}</h3>
-                    <p className="text-gray-600 mb-5 text-sm leading-relaxed line-clamp-3">{project.description}</p>
+                    <h3 className="text-xl font-bold mb-3 leading-tight text-gray-900">{t(project.title)}</h3>
+                    <p className="text-gray-600 mb-5 text-sm leading-relaxed line-clamp-3">{t(project.description)}</p>
 
                     {/* Features */}
                     <div className="mb-5">
@@ -360,12 +381,12 @@ export default function RecentWork() {
                             key={idx}
                             className="text-xs bg-blue-50 text-[#1f3059] px-2.5 py-1 rounded-full border border-blue-100"
                           >
-                            {feature}
+                            {feature.startsWith("project.") ? t(feature) : feature}
                           </span>
                         ))}
                         {project.features.length > 3 && (
                           <span className="text-xs bg-gray-100 text-gray-600 px-2.5 py-1 rounded-full border border-gray-200">
-                            +{project.features.length - 3} more
+                            +{project.features.length - 3} {t("project.count")}
                           </span>
                         )}
                       </div>
@@ -385,12 +406,12 @@ export default function RecentWork() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          View Project
+                          {t("project.deliverstatus.status1")}
                           <ExternalLink className="h-4 w-4 ml-1.5" />
                         </a>
                       ) : (
                         <div className="inline-flex items-center px-4 py-2 bg-[#1f3059] text-white rounded-lg text-sm font-medium">
-                          Coming Soon
+                          {t("project.deliverstatus.status")}
                           <Clock className="h-4 w-4 ml-1.5" />
                         </div>
                       )}
@@ -404,23 +425,7 @@ export default function RecentWork() {
             </AnimatePresence>
           </div>
         </div>
-
-        {/* View all projects button */}
-        
       </div>
-
-      <style>{`
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        
-        /* Hide scrollbar for IE, Edge and Firefox */
-        .hide-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-        }
-      `}</style>
     </section>
   )
 }

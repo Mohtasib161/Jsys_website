@@ -101,10 +101,10 @@ export default function TrustedPartners() {
 
   // Stats fallback
   const stats = sectionData?.stats || [
-    { value: "50+", label: "Global Clients" },
-    { value: "100+", label: "Projects Delivered" },
-    { value: "98%", label: "Client Satisfaction" },
-    { value: "10+", label: "Years Experience" },
+    { value: "50+", label: t("trustedSection.ratingTitle.title1") },
+    { value: "100+", label: t("trustedSection.ratingTitle.title2") },
+    { value: "98%", label: t("trustedSection.ratingTitle.title3") },
+    { value: "10+", label:t("trustedSection.ratingTitle.title4")},
   ]
 
   // Get title with fallback
@@ -136,7 +136,7 @@ export default function TrustedPartners() {
   }, [])
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50/50 relative overflow-hidden">
+    <section className="py-20 px-4 sm:px-6 lg:px-8  relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-[#ff7858]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#1f3059]/5 rounded-full blur-3xl"></div>

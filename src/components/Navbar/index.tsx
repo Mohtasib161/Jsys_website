@@ -1,17 +1,20 @@
 import React, { useState, useCallback } from 'react';
 import { Menu, X, Mail } from 'lucide-react';
 import LanguageDropdown from '../LanguageSwitch'; // Adjust path as needed
+import { useTranslation } from "react-i18next";
 
-const navItems = [
-  { href: '#home', label: 'Overview' },
-  { href: '#services', label: 'What We Do' },
-  { href: '#aboutus', label: 'Who We Are' },
-  { href: '#products', label: 'Innovations' },
-  { href: '#contact', label: 'Get in Touch' },
-];
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const { t } = useTranslation();
+   const navItems = [
+  { href: '#home', label: t("navmenu.home") },
+  { href: '#services', label: t("navmenu.server") },
+  { href: '#aboutus', label: t("navmenu.about") },
+  { href: '#products', label: t("navmenu.project") },
+  { href: '#contact', label: t("navmenu.contact") },
+];
 
   const toggleMenu = useCallback(() => {
     setIsMenuOpen((prev) => !prev);
@@ -28,7 +31,7 @@ const Navbar = () => {
         <div className="container mx-auto px-6 sm:px-6 lg:px-2">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo & Brand */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-1">
               <img
                 src="/assets/images/logo.png"
                 alt="Company Logo"
@@ -42,7 +45,7 @@ const Navbar = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
                 </span>
                 <span className="text-xl lg:text-2xl font-bold text-[#ff7858] relative">
-                  Tech
+                  Technologies
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#ff7858] transition-all duration-300 group-hover:w-full"></span>
                 </span>
               </div>
@@ -63,7 +66,7 @@ const Navbar = () => {
             </div>
 
             {/* Language & Contact */}
-            <div className="hidden lg:flex items-center space-x-3">
+            <div className="hidden  lg:flex items-center space-x-3">
               <LanguageDropdown />
               <a
                 href="mailto:info@jsys-tech.com"
@@ -98,7 +101,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-6 border-b border-gray-100">
           <img
-            src="/assets/logo.png"
+            src="/assets/images/logo.png"
             alt="Company Logo"
             width={50}
             height={50}

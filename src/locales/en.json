@@ -5,6 +5,30 @@
     "subtitle": "We Build It",
     "description": "Transforming imagination into powerful digital experiences. With the perfect blend of creativity and technology, we bring your ideas to life — from initial concept to final execution."
   },
+ "navmenu": {
+  "home": "Overview",
+  "server": "What We Do",
+  "about": "Who We Are",
+  "project": "Innovations",
+  "contact": "Get in Touch" 
+ },
+"buttons" : {
+  "button1": "Get Started",
+  "button2": "Contact Us",
+  "button3": "Send Message",
+  "button4": "Sending..."
+},
+
+"projectsTitle": {
+  "project": "All Projects",
+  "project1": "Healthcare",
+  "project2": "Eduction",
+  "project3": "Real Estate",
+  "project4":"Consulting",
+  "project5":"Agriculture",
+  "subtitle": "Project Filter"
+
+},
   "services": {
     "title": "Our Services",
     "service1": {
@@ -60,7 +84,14 @@
         "company": "Zenex Inc.",
         "location": "Japan"
       }
-    ]
+    ],
+
+    "ratingTitle": {
+      "title1": "Global Clients",
+      "title2": "Projects Delivered",
+      "title3": "Client Satisfaction",
+      "title4": "Years Experience"
+    }
   },
   "whyChooseUs": {
     "title": "Why Choose ",
@@ -89,10 +120,105 @@
     "project2": "Eduction",
     "project3": "Real Estate",
     "project4": "Consulting",
-    "project5": "Agriculture"
+    "project5": "Agriculture",
+     "companyname" :  {
+      "name1": "Rehsaku (Japan)",
+      "name2": "Meridian High School",
+      "name3":  "Avon College",
+      "name4": "MENA ONE Consulting",
+      "name5": "AgriPak",
+      "name6": "TORONTO",
+      "name7": "TAHIR MANGATT",
+      "name8": "Alzheimer's Pakistan"
+     },
+     "keyfeature" : {
+      "title": "Key Feature",
+       "Projectfeatures1": {
+        "name1": "CRM Integration",
+        "name2": "EMR System",
+        "name3": "AI-Driven Analytics"
+       },
+       "Projectfeatures2": {
+        "name1": "Online Learning",
+        "name2": "Student Portal",
+        "name3": "Course Management"
+       },
+        "Projectfeatures3": {
+        "name1": "Educational Platform",
+        "name2": "Student Management",
+        "name3": "Academic Resources"
+       },
+        "Projectfeatures4": {
+        "name1": "Consulting Services",
+        "name2": "ISO Certification",
+        "name3": "Curriculum Development"
+       },
+        "Projectfeatures5": {
+        "name1": "Agricultural Machinery Catalog",
+        "name2": "Tractor Showcase",
+        "name3": "Product Specifications"
+       },
+        "Projectfeatures6": {
+        "name1": "Property Listings",
+        "name2": "Advanced Search Filters",
+        "name3": "Interactive Map View"
+       },
+        "Projectfeatures7": {
+        "name1": "Agent Profile & Achievements",
+        "name2": "Client Testimonials",
+        "name3": "Property Portfolio"
+       },
+
+        "Projectfeatures8": {
+        "name1": "Dementia Awareness Resources",
+        "name2": "Caregiver Support Guides",
+        "name3": "Events & Workshops Calendar"
+       }
+     },
+
+     "projecttitle": {
+      "title1": "Healthcare ",
+      "title2": "education",
+      "title3": "consulting",
+      "title4": "agriculture",
+      "title5": "real-estate"
+
+     },
+
+     "deliverstatus" : {
+      "status": "Coming Soon",
+      "status1" : "View Project"
+     },
+
+     "status": {
+      "status1" : "5+ Year Development Journey",
+      "status2" : "Successfully Delivered"
+    },
+
+     "projectheading" : {
+      "heading1": "Rehabsuite – The Ultimate Clinic Reservation & Management Platform",
+      "heading2": "Meridian High School Web Application",
+      "heading3": "Avon College Web Application",
+      "heading4": "MENA ONE Consulting Web Application",
+      "heading5": "AgriPak Web Application",
+      "heading6": "TORONTO Web Application",
+      "heading7": "TAHIR MANGATT Web Application",
+      "heading8": "Alzheimer's Pakistan"
+     },
+
+     "count" : "more",
+
+    "projectdec": {
+      "description1" : "A fully integrated, 360-degree clinic management system designed for long-term growth and innovation. Over a 5+ year development journey, this platform will unify critical functions including CRM, Finance, Accounts, Payroll, Electronic Medical Records (EMR), Marketing, and cutting-edge AI-driven features to optimize operations, improve patient care, and empower clinic administrators with real-time insights.",
+      "description2" : "Avon College is the learning solution for today's fast-paced life. Avon College offers high quality online programs of independent study for individuals, educators, students, and professionals.",
+      "description3" : "Meridian High School is dedicated to the belief that equal educational opportunity and a strong education system are crucial cornerstones of an autonomous society. Ipsa Scientia Potestas Est (Knowledge is Power) is our motto.",
+      "description4" : "Our consulting firm is dedicated to helping you navigate the complexities of education, ISO certification, curriculum development, and education laws. Let us guide you through the details, so you can focus on what really matters - achieving your educational goals." , 
+       "description5": "The one step solution to all your agricultural machinery requirements. AgriPak is a twenty year old establishment, a leading manufacturer of AGRI machinery with a specialty in the supply of world's finest AGRI & Massey Ferguson Tractors.",
+       "description6": "Discover GTA's Top Real Estate Properties All in One Place",
+       "description7" : "Tahir Mangatt is One of the Top Real Estate Agents in Canada. As a multi-award-winning realtor with years of experience in Ontario, Tahir has earned a reputation as one of the top Canadian realtors.",
+       "description8" : "Alzheimer's Pakistan is the National Organization of Alzheimer's and related dementias. It is registered with Punjab Social Welfare Department and the main objective of this Non Government Community Organization is to work towards the welfare of people with dementia and their care givers. Since its inception in 1999, Alzheimer's Pakistan has been in the forefront to create mass awareness about Dementias."
+  }
   },
-
-
   "coreServices": {
     "title": "Our Core Services",
     "item1": {
@@ -150,22 +276,38 @@
     "description": "Ready to innovate? Let’s turn your ideas into intelligent software that drives success.",
     "buttons": ["Contact Us", "Book a Free Consultation", "Explore Our Work"]
   },
+ 
   "testimonials": {
     "title": "Why",
     "title2": "We’re Chosen",
-    "quotes": [
-      {
-        "text": "JSYS delivered exactly what we envisioned — on time, on budget, and with exceptional quality.",
-        "author": "Muhammad Kamran Ismlaily, Marketing Executive AgriPak Gen Trading LLC (UAE)"
-      },
-      {
-        "text": "Their team felt like an extension of ours. Communication was seamless, and the results were outstanding.",
-        "author": "Tahir Mangatt, CEO & Founder Toronto Condomania – Toronto, Canada"
-      },
-      {
-        "text": "The speed at which JSYS transformed our concept into a fully functional app was remarkable.",
-        "author": "Zahid khan, CEO mena one consultant"
-      }
-    ]
+    "quotes": {
+      "text1": "JSYS delivered exactly what we envisioned — on time, on budget, and with exceptional quality.",
+      "author1": "Muhammad Kamran Ismlaily, Marketing Executive AgriPak Gen Trading LLC (UAE)",
+      "text2": "Their team felt like an extension of ours. Communication was seamless, and the results were outstanding.",
+      "author2": "Tahir Mangatt, CEO & Founder Toronto Condomania – Toronto, Canada",
+      "text3": "The speed at which JSYS transformed our concept into a fully functional app was remarkable.",
+      "author3": "Zahid khan, CEO mena one consultant"
+    }
+  },
+
+  "footcontent": {
+    "subtitle": "Contact Us",
+    "discription": "Our highly skilled development teams specialize in data analysis.",
+    "contactDec":"We would love to hear from you. Send us a message!",
+    "address": "Kanagawa-Ken Yokohama-Shi Minami-Ku Nakajima-Cho Noble",
+    "address2": " Yokohama Maita 504 Japan Post code    232-005",
+   "formcontent": {
+  "title": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "placeholder": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message"
+  }
+}
+    
   }
 }

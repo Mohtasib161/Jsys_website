@@ -133,7 +133,7 @@ export default function AboutSection() {
 
           <div className="flex justify-center lg:justify-start">
             <button className="sm:w-auto bg-[#ff7858] text-white hover:bg-white hover:text-[#ff7858] border-2 border-[#ff7858] px-6 py-3 rounded-full font-semibold text-lg transition duration-300 ease-in-out transform hover:scale-105">
-              Contact Us
+             {t("buttons.button2")}
             </button>
           </div>
         </div>

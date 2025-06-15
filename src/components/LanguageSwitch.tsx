@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -14,45 +15,59 @@ const LanguageDropdown = ({ onSelect }: LanguageDropdownProps) => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  const [selectedLang, setSelectedLang] = useState('en');
 
-  const handleLanguageChange = (code: string) => {
-    i18n.changeLanguage(code);
-    
-    // Update the URL to reflect the new language
+  useEffect(() => {
+    const defaultLang = localStorage.getItem('lang') || navigator.language.split('-')[0] || 'en';
+
+    if (!localStorage.getItem('lang')) {
+      localStorage.setItem('lang', defaultLang);
+    }
+
     const pathSegments = location.pathname.split('/');
     if (languages.some((lang) => lang.code === pathSegments[1])) {
-      pathSegments[1] = code;
+      pathSegments[1] = defaultLang;
     } else {
-      pathSegments.splice(1, 0, code);
+      pathSegments.splice(1, 0, defaultLang);
     }
+
     const newPath = pathSegments.join('/') || '/';
     navigate(newPath);
-    
+    setSelectedLang(defaultLang);
+  }, []);
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLang = e.target.value;
+    setSelectedLang(newLang);
+    i18n.changeLanguage(newLang);
+    localStorage.setItem('lang', newLang);
+
+    const pathSegments = location.pathname.split('/');
+    if (languages.some((lang) => lang.code === pathSegments[1])) {
+      pathSegments[1] = newLang;
+    } else {
+      pathSegments.splice(1, 0, newLang);
+    }
+
+    const newPath = pathSegments.join('/') || '/';
+    navigate(newPath);
+
     onSelect?.();
   };
 
-  const currentLanguage = i18n.language || 'en';
-
   return (
-    <div className="grid grid-cols-2 gap-2">
-      {languages.map((language) => {
-        const isActive = currentLanguage === language.code;
-
-        return (
-          <button
-            key={language.code}
-            onClick={() => handleLanguageChange(language.code)}
-            className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm ${
-              isActive
-                ? 'bg-gray-100 text-[#1f3059] font-medium'
-                : 'text-gray-700 hover:bg-gray-50'
-            }`}
-          >
-            <span>{language.flag}</span>
-            <span>{language.name}</span>
-          </button>
-        );
-      })}
+    <div className="relative inline-block">
+      <select
+        value={selectedLang}
+        onChange={handleLanguageChange}
+        className="block appearance-none bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-blue-500"
+      >
+        {languages.map((language) => (
+          <option key={language.code} value={language.code}>
+            {language.flag} {language.name}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };

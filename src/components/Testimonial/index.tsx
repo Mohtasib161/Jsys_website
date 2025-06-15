@@ -4,7 +4,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react"
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 type ButtonProps = {
   children: React.ReactNode
@@ -13,13 +13,13 @@ type ButtonProps = {
 }
 
 type AvatarProps = {
-  src?: string // Optional, since an avatar may not always have an image
-  alt?: string // Optional alt text for the image
-  fallback: string // Required, fallback text (e.g., initials)
+  src?: string
+  alt?: string
+  fallback: string
 }
 
 type CardProps = {
-  children: React.ReactNode // Explicitly define the 'children' type
+  children: React.ReactNode
 }
 
 const testimonials = [
@@ -27,39 +27,28 @@ const testimonials = [
     name: "Muhammad Kamran Ismlaily",
     profession: "Marketing Executive, AgriPak Gen Trading LLC (UAE)",
     rating: 5,
-    profile: "/assets/team2.png", // You can update these image paths as needed
-    description: "JSYS delivered exactly what we envisioned — on time, on budget, and with exceptional quality.",
+    profile: "/assets/images/team2.png",
+    description: "testimonials.quotes.text1",  // Reference to translation key
+    author: "testimonials.quotes.author1"
   },
   {
     name: "Tahir Mangatt",
     profession: "CEO & Founder, Toronto Condomania – Toronto, Canada",
     rating: 5,
     profile: "/assets/images/team2.png",
-    description:
-      "Their team felt like an extension of ours. Communication was seamless, and the results were outstanding.",
+    description: "testimonials.quotes.text2",  // Reference to translation key
+    author: "testimonials.quotes.author2"
   },
   {
     name: "Zahid Khan",
     profession: "CEO, Mena One Consultant",
     rating: 5,
     profile: "/assets/images/team.jpg",
-    description: "The speed at which JSYS transformed our concept into a fully functional app was remarkable.",
-  },
-  {
-    name: "Mohammed K.",
-    profession: "Director, CESCO",
-    rating: 5,
-    profile: "/assets/images/team2.png",
-    description: "Incredible problem-solvers. Their innovation helped us break into a competitive market.",
-  },
-  {
-    name: "Syed Hussain Jafri",
-    profession: "Secretary General, Alzheimer's Pakistan",
-    rating: 5,
-    profile: "/assets/images/team2.png",
-    description: "Reliable, skilled, and always proactive — exactly what we needed in a tech partner.",
-  },
+    description: "testimonials.quotes.text3",  // Reference to translation key
+    author: "testimonials.quotes.author3"
+  }
 ]
+
 
 // Button component
 const Button: React.FC<ButtonProps> = ({ children, onClick, ariaLabel }) => (
@@ -91,7 +80,7 @@ const Card: React.FC<CardProps> = ({ children }) => (
   <div className="bg-white shadow-lg rounded-lg overflow-hidden">{children}</div>
 )
 
-// CardContent component (now does not require extra props)
+// CardContent component
 const CardContent: React.FC<{ children: React.ReactNode }> = ({ children }) => <div className="p-6">{children}</div>
 
 export default function AnimatedTestimonials() {
@@ -119,10 +108,9 @@ export default function AnimatedTestimonials() {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-[#1f3059] sm:text-5xl text-left">
             {t("testimonials.title")}
-            <br></br>
+            <br />
             <span className="font-serif text-4xl inline-block text-[#ff7858]">{t("testimonials.title2")}</span>
           </h2>
-          
         </div>
 
         <div className="relative">
@@ -155,16 +143,15 @@ export default function AnimatedTestimonials() {
                   </div>
                   <div className="relative mb-6">
                     <Quote className="absolute top-0 left-0 text-purple-200 h-8 w-8 -mt-3 -ml-2" />
-                    <p className="text-gray-600 italic pl-6">{testimonials[currentIndex].description}</p>
+                    {/* Apply translation using keys */}
+                    <p className="text-gray-600 italic pl-6">{t(testimonials[currentIndex].description)}</p>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
-                          className={`h-5 w-5 ${
-                            i < testimonials[currentIndex].rating ? "text-yellow-400" : "text-gray-300"
-                          }`}
+                          className={`h-5 w-5 ${i < testimonials[currentIndex].rating ? "text-yellow-400" : "text-gray-300"}`}
                           fill="currentColor"
                         />
                       ))}

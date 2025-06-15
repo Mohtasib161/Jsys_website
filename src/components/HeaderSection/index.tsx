@@ -42,7 +42,7 @@ const { t } = useTranslation();
 
               <div className="pt-4">
                 <button className="px-8 py-3.5 rounded-full text-white font-medium bg-[#ff7858] hover:bg-[#ff7858]/90 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
-                  Get Started
+                 {t("buttons.button1")}
                 </button>
               </div>
             </div>
