@@ -136,7 +136,7 @@ export default function TrustedPartners() {
   }, [])
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8  relative overflow-hidden">
+    <section className="py-12 px-4 sm:px-6 lg:px-8  relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-[#ff7858]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#1f3059]/5 rounded-full blur-3xl"></div>
@@ -151,8 +151,25 @@ export default function TrustedPartners() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1f3059] mb-4">{title}</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-6">{subtitle}</p>
+          <motion.div
+                      initial={{ opacity: 0, y: -20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6 }}
+                      className="inline-block"
+                    >
+                      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1f3059] mb-4">
+                        {title}
+                      </h2>
+                      <motion.div
+                        className="h-1 bg-gradient-to-r from-[#1f3059] to-[#ff7858] mt-4 mx-auto"
+                        initial={{ width: "0%" }}
+                        whileInView={{ width: "100%" }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                      />
+                    </motion.div>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto my-6">{subtitle}</p>
           <div className="w-32 h-1.5 bg-gradient-to-r from-[#1f3059] to-[#ff7858] mx-auto rounded-full"></div>
         </motion.div>
 
@@ -249,7 +266,7 @@ export default function TrustedPartners() {
         >
           <h3 className="text-center text-xl font-semibold text-[#1f3059] mb-8 flex items-center justify-center">
             <Globe className="w-5 h-5 mr-2" />
-            Our Global Partners
+           {t("whyChooseUs.title3")}
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">

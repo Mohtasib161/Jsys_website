@@ -33,8 +33,8 @@ const projects = [
     id: 2,
     company: "project.companyname.name2",
     title: "project.projectheading.heading2",
-    description: "project.projectdec.description1",
-    image: "/assets/images/project.PNG",
+    description: "project.projectdec.description2",
+    image: "/assets/images/project2.PNG",
     link: "https://avoncollege.com/index.html",
     status: "live",
     developmentPhase: "project.status.status2",
@@ -51,8 +51,8 @@ const projects = [
     id: 3,
     company: "project.companyname.name3",
     title: "project.projectheading.heading3",
-    description: "project.projectdec.description1",
-    image: "/assets/images/project2.PNG",
+    description: "project.projectdec.description3",
+    image: "/assets/images/project3.PNG",
     link: "https://www.meridianhigh.school/index.html",
     status: "live",
     developmentPhase: "project.status.status2",
@@ -69,8 +69,8 @@ const projects = [
     id: 4,
     company: "project.companyname.name4",
     title: "project.projectheading.heading4",
-    description: "project.projectdec.description1",
-    image: "/assets/images/project3.PNG",
+    description: "project.projectdec.description4",
+    image: "/assets/images/project4.PNG",
     link: "https://mena1.consulting/",
     status: "live",
     developmentPhase: "project.status.status2",
@@ -87,8 +87,8 @@ const projects = [
     id: 5,
     company: "project.companyname.name5",
     title: "project.projectheading.heading5",
-    description: "project.projectdec.description1",
-    image: "/assets/images/project.PNG",
+    description: "project.projectdec.description5",
+    image: "/assets/images/Project5.PNG",
     link: "https://agripakgroup.com/",
     status: "live",
     developmentPhase: "project.status.status2",
@@ -105,8 +105,8 @@ const projects = [
     id: 6,
     company: "project.companyname.name6",
     title: "project.projectheading.heading6",
-    description: "project.projectdec.description1",
-    image: "/assets/images/Project5.PNG",
+    description: "project.projectdec.description6",
+    image: "/assets/images/project6.PNG",
     link: "https://torontocondomania.ca/",
     status: "live",
     developmentPhase: "project.status.status2",
@@ -123,7 +123,7 @@ const projects = [
     id: 7,
     company: "project.companyname.name7",
     title: "project.projectheading.heading7",
-    description: "project.projectdec.description1",
+    description: "project.projectdec.description7",
     image: "/assets/images/project7.PNG",
     link: "https://tahirmangatt.com/",
     status: "live",
@@ -141,7 +141,7 @@ const projects = [
     id: 8,
     company: "project.companyname.name8",
     title: "project.projectheading.heading8",
-    description: "project.projectdec.description1",
+    description: "project.projectdec.description8",
     image: "/assets/images/project8.PNG",
     link: "https://alz.org.pk/",
     status: "live",
@@ -226,7 +226,7 @@ export default function RecentWork() {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50" id="projects">
+    <section className="py-20 px-4 md:px-8 lg:px-16 " id="projects">
       <div className="max-w-7xl mx-auto">
         {/* Header with animated underline */}
         <div className="text-center mb-12">
@@ -249,6 +249,7 @@ export default function RecentWork() {
             />
           </motion.div>
           <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg">{t("project.subtitle")}</p>
+           <div className="w-24 h-1 bg-gradient-to-r from-[#ff7858] to-[#1f3059] mx-auto rounded-full mt-8"></div>
         </div>
 
         {/* Category filters */}

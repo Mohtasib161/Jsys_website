@@ -13,6 +13,7 @@ import TrustedPartners from '../components/TrustedPartners';
 import Testimonial from '../components/Testimonial';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
+import CEOMessage from '@/components/CEO-Message';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ export default function HomePage() {
     <>
       <Helmet>
         <html lang={currentLang} />
-        <title>{t('meta.title')}</title>
+        <title>Jsys Technologies</title>
         <meta name="description" content={t('meta.description')} />
         <meta property="og:title" content={t('meta.title')} />
         <meta property="og:description" content={t('meta.description')} />
@@ -46,6 +47,7 @@ export default function HomePage() {
         <Portfolio />
         <WhyChooseJsys />
         <TrustedPartners />
+        <CEOMessage />
         <Testimonial />
         {/* <CTA /> */}
       </main>

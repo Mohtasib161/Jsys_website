@@ -8,13 +8,13 @@ export function LanguageWrapper() {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    if (lang && ['en', 'ja'].includes(lang)) {
+    if (lang && ['en', 'jp'].includes(lang)) {
       i18n.changeLanguage(lang);
       document.documentElement.lang = lang;
     }
   }, [lang, i18n]);
 
-  if (!lang || !['en', 'ja'].includes(lang)) {
+  if (!lang || !['en', 'jp'].includes(lang)) {
     return <Navigate to="/en" replace />;
   }
 

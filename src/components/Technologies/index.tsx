@@ -55,7 +55,7 @@ export default function TechGrid() {
     <section className="py-14 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         {/* Main Title and Description */}
-         <div className="max-w-7xl mx-auto relative z-10">
+         <div className="max-w-7xl mx-auto relative z-10 ">
         <motion.div
           className="text-center mb-16 md:mb-24"
           initial={{ opacity: 0, y: -20 }}
@@ -69,8 +69,8 @@ export default function TechGrid() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 tracking-tight">
-              <span className="text-[#ff7858] inline-block relative">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 tracking-tight ">
+              <span className="text-[#ff7858] inline-block relative pb-3">
                 {t("technologiesSection.title")}
                 <motion.span
                   className="absolute bottom-0 left-0 w-full h-1 bg-[#ff7858]/30 rounded-full"
@@ -80,7 +80,7 @@ export default function TechGrid() {
                   transition={{ duration: 0.8, delay: 0.5 }}
                 ></motion.span>
               </span>{" "}
-              <span className="text-[#1f3059] inline-block relative">
+              <span className="text-[#1f3059] inline-block relative pb-3">
                 {t("technologiesSection.title2")}
                 <motion.span
                   className="absolute bottom-0 left-0 w-full h-1 bg-[#1f3059]/30 rounded-full"
@@ -111,29 +111,30 @@ export default function TechGrid() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           data-aos="fade-up"
         >
-          {technologies.map((tech, index) => (
-            <div
-              key={tech.name}
-              className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:transform hover:scale-[1.02] border border-gray-100"
-            >
-              <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-gray-50 flex items-center justify-center mr-4">
-                    <tech.icon
-                      className="w-7 h-7"
-                      style={{ color: tech.color }}
-                    />
-                  </div>
-                  <h4 className="text-xl font-semibold text-[#1f3059]">
-                    {tech.name}
-                  </h4>
-                </div>
-                <p className="text-gray-600 leading-relaxed">
-                  {t(`technologiesSection.technologies.${index}.description`)}
-                </p>
-              </div>
-            </div>
-          ))}
+         {technologies.map((tech, index) => (
+  <div
+    key={tech.name}
+    className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:transform hover:scale-[1.02] border border-gray-100"
+  >
+    <div className="p-6">
+      <div className="flex items-center mb-4">
+        <div className="w-12 h-12 rounded-lg bg-gray-50 flex items-center justify-center mr-4">
+          <tech.icon
+            className="w-7 h-7"
+            style={{ color: tech.color }}
+          />
+        </div>
+        <h4 className="text-xl font-semibold text-[#1f3059]">
+          {t(`technologiesSection.technologies.${index}.name`)}
+        </h4>
+      </div>
+      <p className="text-gray-600 leading-relaxed">
+        {t(`technologiesSection.technologies.${index}.description`)}
+      </p>
+    </div>
+  </div>
+))}
+
         </div>
       </div>
     </section>

@@ -2,14 +2,14 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import enTranslation from '../locales/en.json';
-import jaTranslation from '../locales/ja.json';
+import jpTranslation from '../locales/jp.json';
 
 const resources = {
   en: {
     translation: enTranslation,
   },
-  ja: {
-    translation: jaTranslation,
+  jp: {
+    translation: jpTranslation,
   },
 };
 

@@ -19,7 +19,7 @@ export default function Services() {
     },
     {
       icon: "/assets/logos/icon3.png",
-      title: t("service3.title"),
+      title: t("services.service3.title"),
       description: t("services.service3.description"),
     },
   ]

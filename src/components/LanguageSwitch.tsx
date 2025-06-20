@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'ja', name: 'Japanese', flag: '🇯🇵' },
+  { code: 'jp', name: '日本語', flag: '🇯🇵' },
 ];
 
 type LanguageDropdownProps = {
