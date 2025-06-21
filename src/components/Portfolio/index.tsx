@@ -249,7 +249,6 @@ export default function RecentWork() {
             />
           </motion.div>
           <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg">{t("project.subtitle")}</p>
-           <div className="w-24 h-1 bg-gradient-to-r from-[#ff7858] to-[#1f3059] mx-auto rounded-full mt-8"></div>
         </div>
 
         {/* Category filters */}
