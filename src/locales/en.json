@@ -1,74 +1,82 @@
 {
   "hero": {
     "title": "You Dream It",
-    
     "subtitle": "We Build It",
-    "description": "Transforming imagination into powerful digital experiences. With the perfect blend of creativity and technology, we bring your ideas to life — from initial concept to final execution."
+    "description": "Transforming imagination into powerful digital experiences. With the perfect blend of creativity and technology, we bring your ideas to life — from initial concept to final execution.",
+    "button": "Contact Us"
   },
- "navmenu": {
-  "home": "Overview",
-  "server": "What We Do",
-  "about": "Who We Are",
-  "project": "Innovations",
-  "contact": "Get in Touch" 
- },
-"buttons" : {
-  "button1": "Get Started",
-  "button2": "Contact Us",
-  "button3": "Send Message",
-  "button4": "Sending..."
-},
-
-"projectsTitle": {
-  "project": "All Projects",
-  "project1": "Healthcare",
-  "project2": "Eduction",
-  "project3": "Real Estate",
-  "project4":"Consulting",
-  "project5":"Agriculture",
-  "subtitle": "Project Filter"
-
-},
+  "navmenu": {
+    "home": "Overview",
+    "server": "What We Do",
+    "about": "Who We Are",
+    "project": "Innovations",
+    "contact": "Get in Touch",
+    "testimonial": "Testimonials"
+  },
+  "buttons": {
+    "button1": "Get Started",
+    "button2": "Contact Us",
+    "button3": "Send Message",
+    "button4": "Sending..."
+  },
+  "StateSection": {
+    "client": "Global Clients",
+    "client number": "100+",
+    "project": "Projects Delivered",
+    "project number": "100+",
+    "satisfaction": "Client Satisfaction",
+    "satisfaction number": "98%",
+    "experience": "Years Experience",
+    "experience number": "10+"
+  },
+  "projectsTitle": {
+    "project": "All Projects",
+    "project1": "Healthcare",
+    "project2": "Eduction",
+    "project3": "Real Estate",
+    "project4": "Consulting",
+    "project5": "Agriculture",
+    "subtitle": "Project Filter"
+  },
   "services": {
     "title": "Our Services",
+    "subtitle": "Our Range of Services",
     "service1": {
-      "title": "Comprehensive Application Development",
-      "description": "Bring your vision to life with our full-cycle application development services. We design and build bespoke web, mobile, and cloud applications that are scalable, secure, and tailored to meet your unique business objectives."
-    },
-    "service2": {
-      "title": "Expert Consulting & Market Intelligence",
-      "description": "Make informed decisions with confidence. Our seasoned consultants provide strategic guidance, in-depth market research, and requirements analysis to uncover opportunities and sharpen your competitive edge."
-    },
-    "service3": {
-      "title": "Agile Team Extension Services",
-      "description": "Expand your capabilities without the overhead. Our flexible team augmentation model gives you on-demand access to elite developers, designers, and project managers — all aligned with your workflow and goals."
+      "title": "Artificial Intelligence",
+      "title2": "Cyber Security",
+      "title3": "Application Development",
+      "title4": "DevOps",
+      "title5": "Agile Team SupportAgile Team Support",
+      "title6": "Consulting Solutions"
     }
   },
   "mission": {
-    "title": "Fueling Your Success Through Real-Time Innovation",
+    "title": "Fueling Your Success ",
+    "title1": "Through Real-Time Innovation",
     "description": "At JSYS Technology, we’re more than just a tech company — we’re a driven collective of developers, designers, and digital visionaries. Our mission is to turn your boldest ideas into high-impact software solutions that accelerate growth, streamline operations, and unlock new opportunities."
   },
   "whatWeDo": {
     "title": "What We Do",
     "item1": {
+      "number": "01",
       "title": "End-to-End Application Development",
       "description": "From concept to deployment, we deliver tailor-made web, mobile, and cloud applications built for performance, scalability, and user experience."
     },
     "item2": {
+      "number": "02",
       "title": "Strategic Consulting & Market Intelligence",
       "description": "Navigate complex markets with confidence. Our experts provide data-driven insights and strategic guidance to align your tech initiatives with real-world business goals."
     },
     "item3": {
+      "number": "03",
       "title": "Innovative Business Solutions",
       "description": "We create forward-thinking, agile solutions designed to solve real problems — helping your business stay ahead of the curve in a fast-moving digital landscape."
     }
   },
-
-  
-
   "trustedSection": {
     "title": "Trusted by Industry Leaders",
-    "subtitle":"See how we’ve transformed ideas into impactful solutions across various industries.",
+    "subtitle": "Our Testimonials",
+    
     "testimonials": [
       {
         "quote": "Our partnership with JSYS Technology has been a game-changer for us. Their technical expertise, agility, and deep understanding of our goals make them an invaluable long-term partner.",
@@ -83,9 +91,16 @@
         "title": "CEO",
         "company": "Zenex Inc.",
         "location": "Japan"
+      },
+
+      {
+        "quote": "JSYS Technology delivered an exceptional solution that transformed our operations. Their dedication and innovative approach are truly commendable.",
+        "name": "Sarah Johnson",
+        "title": "CTO",
+        "company": "Zenex Inc.",
+        "location": "Japan"
       }
     ],
-
     "ratingTitle": {
       "title1": "Global Clients",
       "title2": "Projects Delivered",
@@ -94,9 +109,8 @@
     }
   },
   "whyChooseUs": {
-    "title": "Why Choose ",
-    "title2": "JSYS Technology?",
-    "title3": "Our Global Partners",
+    "subtitle": "Why Choose us ",
+    "title": "Why JSYS Technology Stands Out in the Tech Industry",
     "item1": {
       "title": "Innovation-Driven",
       "description": "We don’t just follow trends — we create them. Our solutions are built with cutting-edge technologies and forward-thinking strategies."
@@ -108,95 +122,93 @@
     "item3": {
       "title": "Agile & Scalable",
       "description": "Whether you’re a startup or enterprise, our flexible engagement models grow with you — from MVP to full-scale deployment."
+    },
+    "rightsection": {
+      "text": "Customer Satisfaction",
+      "text2": "98%"
     }
   },
-
-  "project" : {
-    "title" : "Explore Our Innovations",
-    "subtitle" : "See how we’ve transformed ideas into impactful solutions across various industries.",
+  "project": {
+    "title": "Explore Our Innovations",
+    "subtitle": "Project Delivered",
+     "description": "See how we’ve transformed ideas into impactful solutions across various industries.",
+    "partners": "Our Global Partners",
     "ProjectFilter": "Projects Filter",
     "projectall": "All Projects",
     "project1": "Healthcare",
-
     "project2": "Eduction",
     "project3": "Real Estate",
     "project4": "Consulting",
     "project5": "Agriculture",
-     "companyname" :  {
+    "companyname": {
       "name1": "Rehsaku (Japan)",
       "name2": "Meridian High School",
-      "name3":  "Avon College",
+      "name3": "Avon College",
       "name4": "MENA ONE Consulting",
       "name5": "AgriPak",
       "name6": "TORONTO",
       "name7": "TAHIR MANGATT",
       "name8": "Alzheimer's Pakistan"
-     },
-     "keyfeature" : {
+    },
+    "keyfeature": {
       "title": "Key Feature",
-       "Projectfeatures1": {
+      "Projectfeatures1": {
         "name1": "CRM Integration",
         "name2": "EMR System",
         "name3": "AI-Driven Analytics"
-       },
-       "Projectfeatures2": {
+      },
+      "Projectfeatures2": {
         "name1": "Online Learning",
         "name2": "Student Portal",
         "name3": "Course Management"
-       },
-        "Projectfeatures3": {
+      },
+      "Projectfeatures3": {
         "name1": "Educational Platform",
         "name2": "Student Management",
         "name3": "Academic Resources"
-       },
-        "Projectfeatures4": {
+      },
+      "Projectfeatures4": {
         "name1": "Consulting Services",
         "name2": "ISO Certification",
         "name3": "Curriculum Development"
-       },
-        "Projectfeatures5": {
+      },
+      "Projectfeatures5": {
         "name1": "Agricultural Machinery Catalog",
         "name2": "Tractor Showcase",
         "name3": "Product Specifications"
-       },
-        "Projectfeatures6": {
+      },
+      "Projectfeatures6": {
         "name1": "Property Listings",
         "name2": "Advanced Search Filters",
         "name3": "Interactive Map View"
-       },
-        "Projectfeatures7": {
+      },
+      "Projectfeatures7": {
         "name1": "Agent Profile & Achievements",
         "name2": "Client Testimonials",
         "name3": "Property Portfolio"
-       },
-
-        "Projectfeatures8": {
+      },
+      "Projectfeatures8": {
         "name1": "Dementia Awareness Resources",
         "name2": "Caregiver Support Guides",
         "name3": "Events & Workshops Calendar"
-       }
-     },
-
-     "projecttitle": {
+      }
+    },
+    "projecttitle": {
       "title1": "Healthcare ",
       "title2": "education",
       "title3": "consulting",
       "title4": "agriculture",
       "title5": "real-estate"
-
-     },
-
-     "deliverstatus" : {
-      "status": "Coming Soon",
-      "status1" : "View Project"
-     },
-
-     "status": {
-      "status1" : "5+ Year Development Journey",
-      "status2" : "Successfully Delivered"
     },
-
-     "projectheading" : {
+    "deliverstatus": {
+      "status": "Coming Soon",
+      "status1": "View Project"
+    },
+    "status": {
+      "status1": "5+ Year Development Journey",
+      "status2": "Successfully Delivered"
+    },
+    "projectheading": {
       "heading1": "Rehabsuite – The Ultimate Clinic Reservation & Management Platform",
       "heading2": "Meridian High School Web Application",
       "heading3": "Avon College Web Application",
@@ -205,21 +217,18 @@
       "heading6": "TORONTO Web Application",
       "heading7": "TAHIR MANGATT Web Application",
       "heading8": "Alzheimer's Pakistan"
-     },
-
-     "count" : "more",
-
+    },
+    "count": "more",
     "projectdec": {
-      "description1" : "A fully integrated, 360-degree clinic management system designed for long-term growth and innovation. Over a 5+ year development journey, this platform will unify critical functions including CRM, Finance, Accounts, Payroll, Electronic Medical Records (EMR), Marketing, and cutting-edge AI-driven features to optimize operations, improve patient care, and empower clinic administrators with real-time insights.",
-      "description2" : "Meridian High School is dedicated to the belief that equal educational opportunity and a strong education system are crucial cornerstones of an autonomous society. Ipsa Scientia Potestas Est (Knowledge is Power) is our motto.",
-      "description3" : "Avon College is the learning solution for today's fast-paced life. Avon College offers high quality online programs of independent study for individuals, educators, students, and professionals.",
-      
-      "description4" : "Our consulting firm is dedicated to helping you navigate the complexities of education, ISO certification, curriculum development, and education laws. Let us guide you through the details, so you can focus on what really matters - achieving your educational goals." , 
-       "description5": "The one step solution to all your agricultural machinery requirements. AgriPak is a twenty year old establishment, a leading manufacturer of AGRI machinery with a specialty in the supply of world's finest AGRI & Massey Ferguson Tractors.",
-       "description6": "Discover GTA's Top Real Estate Properties All in One Place",
-       "description7" : "Tahir Mangatt is One of the Top Real Estate Agents in Canada. As a multi-award-winning realtor with years of experience in Ontario, Tahir has earned a reputation as one of the top Canadian realtors.",
-       "description8" : "Alzheimer's Pakistan is the National Organization of Alzheimer's and related dementias. It is registered with Punjab Social Welfare Department and the main objective of this Non Government Community Organization is to work towards the welfare of people with dementia and their care givers. Since its inception in 1999, Alzheimer's Pakistan has been in the forefront to create mass awareness about Dementias."
-  }
+      "description1": "A fully integrated, 360-degree clinic management system designed for long-term growth and innovation. Over a 5+ year development journey, this platform will unify critical functions including CRM, Finance, Accounts, Payroll, Electronic Medical Records (EMR), Marketing, and cutting-edge AI-driven features to optimize operations, improve patient care, and empower clinic administrators with real-time insights.",
+      "description2": "Meridian High School is dedicated to the belief that equal educational opportunity and a strong education system are crucial cornerstones of an autonomous society. Ipsa Scientia Potestas Est (Knowledge is Power) is our motto.",
+      "description3": "Avon College is the learning solution for today's fast-paced life. Avon College offers high quality online programs of independent study for individuals, educators, students, and professionals.",
+      "description4": "Our consulting firm is dedicated to helping you navigate the complexities of education, ISO certification, curriculum development, and education laws. Let us guide you through the details, so you can focus on what really matters - achieving your educational goals.",
+      "description5": "The one step solution to all your agricultural machinery requirements. AgriPak is a twenty year old establishment, a leading manufacturer of AGRI machinery with a specialty in the supply of world's finest AGRI & Massey Ferguson Tractors.",
+      "description6": "Discover GTA's Top Real Estate Properties All in One Place",
+      "description7": "Tahir Mangatt is One of the Top Real Estate Agents in Canada. As a multi-award-winning realtor with years of experience in Ontario, Tahir has earned a reputation as one of the top Canadian realtors.",
+      "description8": "Alzheimer's Pakistan is the National Organization of Alzheimer's and related dementias. It is registered with Punjab Social Welfare Department and the main objective of this Non Government Community Organization is to work towards the welfare of people with dementia and their care givers. Since its inception in 1999, Alzheimer's Pakistan has been in the forefront to create mass awareness about Dementias."
+    }
   },
   "coreServices": {
     "title": "Our Core Services",
@@ -236,49 +245,32 @@
       "description": "We engineer creative, practical solutions to real-world challenges — helping your business adapt, evolve, and thrive."
     }
   },
-  
-  
-"technologiesSection": {
-  "title": "Technologies Powering  ",
-  "title2": "Our Innovations",
-  "description": "At JSYS Technology, we harness the power of modern, battle-tested technologies to build high-performance, scalable, and future-ready solutions.",
-  "technologies": {
-    "0": {
-      "name": "Microsoft Stack",
-      "description": "Robust enterprise-grade tools for scalable, secure, and efficient development."
-    },
-    "1": {
-      "name": "Laravel",
-      "description": "Elegant PHP framework for clean, fast, and maintainable backend development."
-    },
-    "2": {
-      "name": "React & Next.js",
-      "description": "Cutting-edge tools for building interactive, high-performance frontends and full-stack applications."
-    },
-    "3": {
-      "name": "JavaScript & TypeScript",
-      "description": "The core of modern web development — dynamic, versatile, and everywhere."
-    },
-    "4": {
-      "name": "Angular",
-      "description": "Structured, scalable front-end architecture for large-scale enterprise apps."
-    },
-    "5": {
-      "name": "Node.js & NestJS",
-      "description": "Fast, scalable server-side frameworks for building real-time and event-driven systems."
-    },
-    "6": {
-      "name": "Flutter & Swift",
-      "description": "High-performance mobile app development — cross-platform with Flutter, native iOS with Swift."
+  "technologiesSection": {
+    "title": "Technologies Powering  ",
+    "title2": "Our Innovations",
+    "subtitle": "TECHNOLOGIES WE USE",
+    "description": "At JSYS Technology, we harness the power of modern, battle-tested technologies to build high-performance, scalable, and future-ready solutions.",
+    "technologies": {
+      "0": {
+        "name": "Microsoft Stack",
+        "name2": "React & Next.js",
+        "name3": "Node.js & NestJS",
+        "name4": "Laravel",
+        "name5": "JavaScript & TypeScript",
+        "name6": "Flutter & Swift",
+        "name7": "Angular"
+      }
     }
-  }
-},
+  },
   "cta": {
     "title": "Let’s Build What’s Next",
     "description": "Ready to innovate? Let’s turn your ideas into intelligent software that drives success.",
-    "buttons": ["Contact Us", "Book a Free Consultation", "Explore Our Work"]
+    "buttons": [
+      "Contact Us",
+      "Book a Free Consultation",
+      "Explore Our Work"
+    ]
   },
- 
   "testimonials": {
     "title": "Why",
     "title2": "We’re Chosen",
@@ -291,56 +283,73 @@
       "author3": "Zahid khan, CEO mena one consultant"
     }
   },
-
   "footcontent": {
-    "subtitle": "Contact Us",
-    "discription": "Our highly skilled development teams specialize in data analysis.",
-    "contactDec":"We would love to hear from you. Send us a message!",
+    "subtitle": "Contact Info",
+    "description": "Our highly skilled development teams specialize in data analysis.",
+    "contactDec": "We would love to hear from you. Send us a message!",
     "successMessage": "Your message has been sent successfully!",
+
+    "footerContactinfo": {
+      "Phone": "Phone Number",
+      "PhoneNumber": "09032881899",
+      "Phone Number2": "92-42-36850051"
+       
+    },
+     "footeremiladdress" : {
+      "email": "Email Address",
+      "emailaddress": "info@jsys-tech.com"
+     },
     "addressjapane": {
       "japadress": "Japan Address",
-    "address": "Kanagawa-Ken Yokohama-Shi Minami-Ku Nakajima-Cho Noble",
-    "address2": " Yokohama Maita 504 Japan Post code 232-005"
-
+      "address": "Kanagawa-Ken Yokohama-Shi Minami-Ku Nakajima-Cho Noble",
+      "address2": "Yokohama Maita 504 Japan Post code 232-005"
     },
     "addresspakistan": {
-       "pakadress": "Pakistan Address",
-        "address": "77, Lane 4, Subeydar Colony, Zarar Shaheed Road",
-    "address2": " Lahore-Cantt P.O 54810"
-
+      "pakadress": "Pakistan Address",
+      "address": "77, Lane 4, Subeydar Colony, Zarar Shaheed Road",
+      "address2": " Lahore-Cantt P.O 54810"
     },
+    "formcontent": {
+      "title": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "placeholder": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message"
+      },
 
-    
-
-  
-   "formcontent": {
-  "title": {
-    "name": "Name",
-    "email": "Email",
-    "message": "Message"
+      "button" :{
+        "send": "Send Message",
+        "sending": "Sending..."
+      }
+    },
+    "copyrighttext": "  Copyright © 2025 JSYS Technologies : All Right Reserved"
   },
-  "placeholder": {
-    "name": "Your Name",
-    "email": "Your Email",
-    "message": "Your Message"
-  }
-}
-    
-  },
-
-    "message_from_ceo": {
+  "message_from_ceo": {
     "title": "A Message from Our CEO",
     "subtitle": "Driving Innovation, Delivering Excellence",
     "content": {
-      "part1" : " At JSYS Technologies, we believe software has the power to transform businesses, elevate human potential, and solve tomorrow’s challenges today.",
+      "part1": " At JSYS Technologies, we believe software has the power to transform businesses, elevate human potential, and solve tomorrow’s challenges today.",
       "part2": "   Our commitment is simple: Excellence without compromise. We prioritize security, scalability, and user-centric design in every line of code. But beyond technology, it’s our partnership philosophy that sets us apart. We listen deeply, collaborate transparently, and stand by you long after deployment.  ",
       "part3": "  To our clients: Thank you for trusting us to be your digital pioneers. To future partners: We’re ready to engineer what’s next for you.",
       "part4": " Explore how JSYS can empower your journey. Let’s build the future, together. "
     },
     "signature": {
       "name": "Zahid Chaudhry",
-      
       "position": "CEO, JSYS Technologies"
     }
+  },
+
+  "calltoaction": {
+    "title" : "Ready To Plug The Leaks In Your Business",
+    "subtitle": "Book your free demo or strategy call today.",
+    "button": "Schedule Your Call Now"
   }
 }
+
+
+
+

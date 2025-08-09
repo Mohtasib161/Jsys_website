@@ -14,6 +14,11 @@ import Testimonial from '../components/Testimonial';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
 import CEOMessage from '@/components/CEO-Message';
+import StateSections from '@/components/StateSections';
+import WhoWeAre from '@/components/WhoWeAre';
+import { OurServices2, Technologies2, TestimonialsSection, WhyWeChoose } from '@/components';
+import TeamSpeaksSection from '@/components/TeamSpeaksSection';
+import CallToActionSection from '@/components/CallToActionSection';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -39,16 +44,24 @@ export default function HomePage() {
       
       <main>
         <HeaderSection /> 
-        <Services />
-        <AboutUs />
+        <StateSections />
+        <WhoWeAre />
+        <OurServices2 />
+        <Technologies2 />
+        <WhyWeChoose />
+        <TestimonialsSection />
+        {/* <Services /> */}
+        {/* <AboutUs /> */}
        
         {/* <Features /> */}
-        <Technologies />
+        {/* <Technologies /> */}
         <Portfolio />
-        <WhyChooseJsys />
-        <TrustedPartners />
-        <CEOMessage />
-        <Testimonial />
+        {/* <WhyChooseJsys /> */}
+        {/* <TrustedPartners /> */}
+        {/* <CEOMessage /> */}
+        <TeamSpeaksSection />
+        {/* <Testimonial /> */}
+        <CallToActionSection />
         {/* <CTA /> */}
       </main>
       <Footer />

@@ -1,9 +1,10 @@
 "use client";
 
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterest, FaPrint, FaTiktok, FaTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const [loading, setLoading] = useState(false);
@@ -54,82 +55,86 @@ export default function Footer() {
   };
 
   return (
-    <section className="bg-[#1f3059]" id="contact">
-      <footer className="bg-navy-900 py-6 px-6 lg:px-8 container mx-auto">
+    <section className="bg-[#1A1A1A] relative " id="contact">
+      <footer className="bg-navy-900 py-6 px-6 lg:px-8 container mx-auto ">
+         <img
+                  src="/assets/images/logo white png.png"
+                  alt="JSYS Technologies Logo"
+                  className="absolute bottom-0 right-0 w-32 lg:w-80 h-auto opacity-10"
+                 
+                />
         <div className="grid grid-cols-1 gap-6 md:gap-0 lg:grid-cols-2 items-center justify-around">
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <img
-                src="/assets/images/logo.png"
-                alt="LOGO"
-                width={80}
-                height={80}
-              />
-              <span className="text-2xl font-bold text-white">
-                Jsys Technologies
-              </span>
+           <div>
+            <div className="mb-8"> {/* Added margin-bottom for spacing */}
+              <div className="py-4">
+                <img
+                  src="/assets/images/jsyslogowhite.png"
+                  alt="JSYS Technologies Logo"
+                  width={120}
+                  height={120}
+                 
+                />
+                
+              </div>
+              <p className="text-sm text-white max-w-sm ">
+                {t("footcontent.description")}
+              </p>
             </div>
-            <p className="text-sm text-white">{t("footcontent.discription")}</p>
-            <div className="text-white">
-              <h3 className="text-lg font-semibold mb-6">
+            <div className="mt-8"> {/* Adjusted margin-top for spacing */}
+              <h3 className="text-white text-xl font-semibold mb-4 pb-2 border-b border-gray-700">
                 {t("footcontent.subtitle")}
               </h3>
-
-              <ul className="space-y-4">
-                {/* Phone Numbers */}
-                <li className="flex items-center gap-3">
-                  <Phone size={18} className="text-white" />
-                  <span>Tel. 09032881899</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Phone size={18} className="text-white" />
-                  <span>Tel 92-42-36850051</span>
-                </li>
-
-                {/* Email */}
-                <li className="flex items-center gap-3">
-                  <Mail size={18} className="text-white" />
-                  <span>info@jsys-tech.com</span>
-                </li>
-
-                {/* Japan Address */}
-                <li>
-                  <div className="flex items-start gap-3">
-                    <MapPin size={18} className="text-white mt-1" />
-                    <div>
-                      <p className="font-semibold">
-                        {t("footcontent.addressjapane.japadress")}
-                      </p>
-                      <p>
-                        {t("footcontent.addressjapane.address")}
-                        <br />
-                        {t("footcontent.addressjapane.address2")}
-                      </p>
-                    </div>
+              <ul className="space-y-6">
+                <li className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded flex items-center justify-center">
+                    <Phone size={20} className="text-black" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">{t("footcontent.footerContactinfo.Phone")}</p>
+                    <span className="text-gray-400 block">{t("footcontent.footerContactinfo.PhoneNumber")}</span>
+                    <span className="text-gray-400 block">{t("footcontent.footerContactinfo.Phone Number2")}</span>
                   </div>
                 </li>
-
-                {/* Lahore Address */}
-                <li>
-                  <div className="flex items-start gap-3">
-                    <MapPin size={18} className="text-white mt-1" />
-                    <div>
-                      <p className="font-semibold">
-                        {t("footcontent.addresspakistan.pakadress")}
-                      </p>
-                      <p>
-                        {t("footcontent.addresspakistan.address")}
-                        <br />
-                        {t("footcontent.addresspakistan.address2")}
-                      </p>
-                    </div>
+                <li className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded flex items-center justify-center">
+                    <Mail size={20} className="text-black" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">{t("footcontent.footeremiladdress.email")}</p>
+                    <span className="text-gray-400 block">{t("footcontent.footeremiladdress.emailaddress")}</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded flex items-center justify-center">
+                    <MapPin size={20} className="text-black" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">{t("footcontent.addressjapane.japadress")}</p>
+                    <p className="text-gray-400">
+                      {t("footcontent.addressjapane.address")}
+                      <br />
+                       {t("footcontent.addressjapane.address2")}
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded flex items-center justify-center">
+                    <MapPin size={20} className="text-black" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">{t("footcontent.addresspakistan.pakadress")})</p>
+                    <p className="text-gray-400">
+                      {t("footcontent.addresspakistan.address")}
+                      <br />
+                      {t("footcontent.addresspakistan.address2")}
+                    </p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="max-w-sm md:max-w-md mx-auto bg-white shadow-md rounded-lg">
+          <div className="max-w-sm md:max-w-md mx-auto bg-[#f3f5fc] shadow-md rounded-sm">
             <div className="p-6">
               <h2 className="text-2xl font-bold text-center text-[#1f3059] mb-2">
                 {t("footcontent.subtitle")}
@@ -193,14 +198,15 @@ export default function Footer() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm min-h-[100px] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
-                <button
+                 <button
                   type="submit"
                   disabled={loading}
-                  className={`w-full px-4 py-2 text-white rounded-md transition-colors ${
-                    loading ? "bg-gray-400 cursor-not-allowed" : "bg-[#ff7858]"
+                  className={` inline-flex items-center justify-center px-6 py-2 text-black rounded-sm font-medium transition-colors duration-200 text-base ${
+                    loading ? "bg-gray-400 cursor-not-allowed" : "bg-yellow-400 hover:bg-yellow-500"
                   }`}
                 >
-                  {loading ? t("buttons.button4") : t("buttons.button3")}
+                  {loading ? t("footcontent.formcontent.button.sending")  : t("footcontent.formcontent.button.send") }
+                  {!loading && <ArrowRight className="ml-2 w-5 h-5" />}
                 </button>
               </form>
               {submitted && (
@@ -209,6 +215,29 @@ export default function Footer() {
                 </p>
               )}
             </div>
+          </div>
+          
+        </div>
+        <div className="max-w-6xl mt-12 pt-8 border-t border-gray-700 flex flex-col sm:flex-row items-center justify-between text-gray-400 text-sm">
+          <p className="mb-4 sm:mb-0">
+            {t("footcontent.copyrighttext")}
+          </p>
+          <div className="flex space-x-4">
+            <a href="https://www.tiktok.com/@jsystechnologies" aria-label="Twitter" className="hover:text-white transition-colors">
+              <FaTiktok className="w-6 h-6" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61578189938785" aria-label="Facebook" className="hover:text-white transition-colors">
+              <FaFacebookF className="w-6 h-6" />
+            </a>
+            <a href="https://www.instagram.com/jsystechnologies?igsh=Y25icXlyanNobHE0" aria-label="Instagram" className="hover:text-white transition-colors">
+              <FaInstagram className="w-6 h-6" />
+            </a>
+            <a href="https://www.linkedin.com/company/105711858/admin/dashboard/" aria-label="LinkedIn" className="hover:text-white transition-colors">
+              <FaLinkedinIn className="w-6 h-6" />
+            </a>
+             <a href="https://jp.pinterest.com/jsystech/" aria-label="LinkedIn" className="hover:text-white transition-colors">
+              <FaPinterest className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </footer>

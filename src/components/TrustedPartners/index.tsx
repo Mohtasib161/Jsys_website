@@ -281,14 +281,7 @@ export default function TrustedPartners() {
                     <span className="text-lg font-semibold text-gray-400">{partner.name}</span>
                   </div>
 
-                  {/* This would display the actual logo if available */}
-                  {/* 
-                  <img 
-                    src={partner.logo || "/placeholder.svg"} 
-                    alt={partner.name} 
-                    className="object-contain p-2 w-full h-full" 
-                  />
-                  */}
+                  
                 </div>
               </div>
             ))}

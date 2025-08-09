@@ -13,6 +13,9 @@ module.exports = {
         'dark': '#1A1A1A',
         'light': '#F7F7F7',
       },
+       backgroundImage: {
+        'custom-gradient': 'linear-gradient(135deg, #0a1428 0%, #1e3a5f 50%, #2d4a6b 100%)',
+      },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
       },

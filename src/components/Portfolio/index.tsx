@@ -6,6 +6,8 @@ import { useState, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Clock, ExternalLink, CheckCircle, ChevronLeft, ChevronRight, Filter } from "lucide-react"
 import { useTranslation } from "react-i18next"
+import { ArrowRight } from 'lucide-react'
+
 
 // Mock translation function - replace with your actual useTranslation hook
 
@@ -226,46 +228,35 @@ export default function RecentWork() {
   }
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 " id="projects">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-[#021430] " id="projects">
+      <div className="max-w-6xl mx-auto">
         {/* Header with animated underline */}
         <div className="text-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="inline-block"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1f3059] uppercase tracking-tight">
+          <p className="text-[#f8b715] text-sm font-medium tracking-wider uppercase mb-4">
+            {t("project.subtitle")}
+          </p>
+          <div className="flex items-center justify-center gap-4">
+            {/* Decorative line on the left */}
+            <div className="w-20 h-0.5 bg-white"></div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
               {t("project.title")}
             </h2>
-            <motion.div
-              className="h-1 bg-gradient-to-r from-[#1f3059] to-[#ff7858] mt-4 mx-auto"
-              initial={{ width: "0%" }}
-              whileInView={{ width: "100%" }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-            />
-          </motion.div>
-          <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg">{t("project.subtitle")}</p>
+          </div>
         </div>
 
         {/* Category filters */}
         <div className="mb-10">
           <div className="flex items-center justify-center mb-4">
-            <Filter className="w-5 h-5 mr-2 text-[#1f3059]" />
-            <h3 className="text-lg font-semibold text-[#1f3059]">{t("projectsTitle.subtitle")}</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-2 md:gap-4">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveFilter(category.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-4 py-2 rounded-sm text-sm font-medium transition-all duration-300 ${
                   activeFilter === category.id
-                    ? "bg-[#1f3059] text-white shadow-md"
-                    : "bg-white text-gray-600 hover:bg-gray-100"
+                    ? "bg-[#f8b715] text-black shadow-md"
+                    : "bg-[##1f3059] text-white border border-solid   "
                 }`}
               >
                 {t(category.label)}
@@ -277,21 +268,9 @@ export default function RecentWork() {
         {/* Projects carousel with navigation */}
         <div className="relative">
           {/* Navigation buttons */}
-          <button
-            onClick={scrollLeftFunc}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-[#1f3059] hover:bg-[#1f3059] hover:text-white transition-colors duration-300 hidden md:flex"
-            aria-label="Scroll left"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
+         
 
-          <button
-            onClick={scrollRightFunc}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-md text-[#1f3059] hover:bg-[#1f3059] hover:text-white transition-colors duration-300 hidden md:flex"
-            aria-label="Scroll right"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+        
 
           {/* Projects container - Fixed scrollbar issue */}
           <div
@@ -325,7 +304,7 @@ export default function RecentWork() {
                   onHoverEnd={() => setHoveredIndex(null)}
                 >
                   {/* Status Badge */}
-                  <div className="absolute top-4 right-4 z-10 bg-[#1f3059]/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-md">
+                  {/* <div className="absolute top-4 right-4 z-10 bg-[#1f3059]/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-md">
                     {project.status === "development" ? (
                       <>
                         <Clock className="h-3.5 w-3.5" />
@@ -337,12 +316,12 @@ export default function RecentWork() {
                         {t("project.deliverstatus.status1")}
                       </>
                     )}
-                  </div>
+                  </div> */}
 
                   {/* Category tag */}
-                  <div className="absolute top-4 left-4 z-10 bg-[#ff7858]/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium shadow-md">
+                  {/* <div className="absolute top-4 left-4 z-10 bg-[#ff7858]/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium shadow-md">
                     {t(project.category)}
-                  </div>
+                  </div> */}
 
                   {/* Project image with overlay */}
                   <div className="relative h-64 overflow-hidden">
@@ -367,18 +346,18 @@ export default function RecentWork() {
                     </div>
 
                     <h3 className="text-xl font-bold mb-3 leading-tight text-gray-900">{t(project.title)}</h3>
-                    <p className="text-gray-600 mb-5 text-sm leading-relaxed line-clamp-3">{t(project.description)}</p>
+                    {/* <p className="text-gray-600 mb-5 text-sm leading-relaxed line-clamp-3">{t(project.description)}</p> */}
 
                     {/* Features */}
-                    <div className="mb-5">
+                    {/* <div className="mb-5">
                       <h4 className="text-sm font-semibold text-gray-800 mb-2.5 flex items-center">
                         <span className="w-1.5 h-1.5 bg-[#ff7858] rounded-full mr-1.5"></span>
                         Key Features:
                       </h4>
                       <div className="flex flex-wrap gap-1.5">
-                        {project.features.slice(0, 3).map((feature, idx) => (
+                        {project.features.slice(0, 3).map((feature, id) => (
                           <span
-                            key={idx}
+                            key={id}
                             className="text-xs bg-blue-50 text-[#1f3059] px-2.5 py-1 rounded-full border border-blue-100"
                           >
                             {feature.startsWith("project.") ? t(feature) : feature}
@@ -390,7 +369,7 @@ export default function RecentWork() {
                           </span>
                         )}
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* Action button */}
                     <motion.div
@@ -419,11 +398,87 @@ export default function RecentWork() {
                   </div>
 
                   {/* Bottom accent line */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#1f3059] to-[#ff7858]"></div>
+                 
                 </motion.div>
               ))}
             </AnimatePresence>
           </div>
+           <section className=" text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        {/* Top content with text and button */}
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-16">
+          <div className="lg:max-w-2xl">
+            <p className="text-sm sm:text-base leading-relaxed text-gray-300">
+              {t("project.description")}
+            </p>
+          </div>
+          <div className="flex-shrink-0">
+            <button className="inline-flex items-center justify-center bg-[#f8b715] hover:bg-[#f8b715] text-black px-6 py-3 rounded-sm font-medium transition-colors duration-200 text-lg">
+                {t("hero.button")}
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </button>
+          </div>
+        </div>
+
+        {/* Partners section */}
+        <div>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-12">{t("project.partners")}</h2>
+          
+          {/* Partner logos */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+            {/* King's College Logo */}
+            <div className="flex justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-slate-800 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 sm:w-8 sm:h-8 text-slate-800" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* REHASAKU Logo */}
+            <div className="flex justify-center">
+              <div className="text-center">
+                <div className="text-lg sm:text-xl font-bold tracking-wider">
+                  <span className="block">REHASAKU</span>
+                </div>
+              </div>
+            </div>
+
+            {/* ZENEX Logo */}
+            <div className="flex justify-center">
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl font-bold">Z</div>
+                <div className="text-xs sm:text-sm font-medium tracking-wider mt-1">ZENEX</div>
+              </div>
+            </div>
+
+            {/* M Logo */}
+            <div className="flex justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-teal-500 rounded-lg flex items-center justify-center">
+                <span className="text-2xl sm:text-3xl font-bold text-white">M</span>
+              </div>
+            </div>
+
+            {/* Toronto Logo */}
+            <div className="flex justify-center col-span-2 sm:col-span-1">
+              <div className="text-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full mx-auto mb-2 flex items-center justify-center">
+                  <div className="w-4 h-4 sm:w-5 sm:h-5 bg-slate-800 rounded-full"></div>
+                </div>
+                <div className="text-xs sm:text-sm font-bold tracking-wider">
+                  <span className="block">TORONTO</span>
+                  <span className="block text-xs opacity-75">INSTITUTE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
         </div>
       </div>
     </section>
